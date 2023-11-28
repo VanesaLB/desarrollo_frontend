@@ -59,10 +59,30 @@ nav ul li a {
       width: 1111px;
       height: 580px;
       margin: auto;
-      margin-top: 20px;
+      margin-top: 96px;
+      margin-bottom: 61px;
       display:inline - flex;
       flex-direction: column;
       align-items: center;
       padding: 56px 111px;
      
     }
+    
+#texto{
+    width: 208px;
+    height: 55px;
+    color: var(--background-colors-primary-green-dark, #004C47);
+    font-family: Inria Sans;
+    font-size: 48px;
+    font-style: normal;
+    grid-template-rows:1/2 ;
+    font-weight: 700;
+    line-height: 140%; /* 67.2px */
+ 
+}
+ .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       
+        gap: 128px;
+      }
