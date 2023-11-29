@@ -7,55 +7,59 @@
     <link rel="stylesheet" type="text/css" href="/css/home.css" />
 </head>
 <body>
-    <!-- Dudas para Raquel
-    ¿En grid para hacer la página general ponermos 12 columnas?
-    Si en mi cabecera va la barra de navegación, pongo nav dentro?
-    Diferencia entre section, article y aside?
-    Pongo un main que abarque todo lo que no está en cabecera y footer
-    o no hace falta si lo he hecho por bloques cada sección?
-    Para poner el buscador con la lupa, pongo una imagen dentro? y debe tener
-    usabilidad??-->
     <header id="cabecera">
-        <a href="home.html"><img src="../images/logotipo.png" alt="Logotipo" id="logotipo"></a>
-        <nav>
-            <ul>
-                <li><a href="nuestrosPsicologos.html">Nuestros psicólogos</a></li>
-                <li><a href="">Tarifas</a></li>
-                <li><a href="">Acerca de</a></li>
-                <li><a href="">Mi cuenta</a></li>
-                <li><input type="search" id="barraBusqueda" name="barraBusqueda"/></li>
-                <li><button type="button" class="btnSecundario">Inicia sesión</button></li>
-                <li><button type="button" class="btnPrimario">Regístrate</button></li>
-            </ul>
-        </nav>
+      <a href="home.html" id="enlaceHome"><img src="../images/logotipo.png" alt="Logotipo" id="logotipo"></a>
+      <nav>
+        <div class="enlaceBarra"><a href="nuestrosPsicologos.html">Nuestros psicólogos</a></div>
+        <div class="enlaceBarra"><a href="">Tarifas</a></div>
+        <div class="enlaceBarra"><a href="">Acerca de</a></div>
+        <div class="enlaceBarra"><a href="">Mi cuenta</a></div>
+        <div class="enlaceBarra"><form><input type="text" id="barraBusqueda" name="barraBusqueda"/><button type ="submit" id="btnBarraBusqueda">&#128269;</button></form></div>
+        <div class="enlaceBarra"><a href="" id="btnSecundario">Inicia sesión</a></div>
+        <div class="enlaceBarra"><a href="" id="btnPrimario">Regístrate</a></div>
+      </nav>
     </header>
 
-    <section></section>
-    <article></article>
-
     <main id="container">
-
+      <div class="secciones">
+        <div id="textoHero">
+          <h1>Te ayudamos en el camino</h1>
+          <p>Conoce nuestra metodología, adaptada a tus necesidades. Con psicólogos con gran experiencia y muchas especialidades. Dinos que necesitas y nosotros te ayudaremos.</p>
+          <a href="" class="btnSecundarioW">¿Quieres una consulta?</a>
+        </div>
+        <img src="../images/Mental health-cuate.png" alt="Salud mental se cuida" />
+      </div>
+      <div class="secciones">
+        
+      </div>
     </main>
     <footer id="pie_pagina">
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="401" viewBox="0 0 1440 401" fill="none">
-           <g filter="url(#filter0_i_508_70)">
-             <path d="M686 54.7366C418.8 -12.4634 117.333 -3.93006 0 8.73661V400.737H1440V120.737C1300 126.737 953.2 121.937 686 54.7366Z" fill="#004C47"/>
-           </g>
-           <defs>
-             <filter id="filter0_i_508_70" x="0" y="0" width="1440" height="420.737" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-               <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-               <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-               <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-               <feOffset dy="20"/>
-               <feGaussianBlur stdDeviation="17.5"/>
-               <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-               <feColorMatrix type="matrix" values="0 0 0 0 0.0352941 0 0 0 0 0.792157 0 0 0 0 0.819608 0 0 0 0.65 0"/>
-               <feBlend mode="normal" in2="shape" result="effect1_innerShadow_508_70"/>
-             </filter>
-           </defs>
-         </svg>-->
-         <img
-           src="../vectores//Vector 3 (1).svg" id="pie_pagina" alt="triangle with all three sides equal" />
-        </footer>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="401" viewBox="0 0 1440 401" fill="none">
+         <g filter="url(#filter0_i_508_70)">
+           <path d="M686 54.7366C418.8 -12.4634 117.333 -3.93006 0 8.73661V400.737H1440V120.737C1300 126.737 953.2 121.937 686 54.7366Z" fill="#004C47"/>
+         </g>
+         <defs>
+           <filter id="filter0_i_508_70" x="0" y="0" width="1440" height="420.737" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+             <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+             <feOffset dy="20"/>
+             <feGaussianBlur stdDeviation="17.5"/>
+             <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+             <feColorMatrix type="matrix" values="0 0 0 0 0.0352941 0 0 0 0 0.792157 0 0 0 0 0.819608 0 0 0 0.65 0"/>
+             <feBlend mode="normal" in2="shape" result="effect1_innerShadow_508_70"/>
+           </filter>
+         </defs>
+       </svg>-->
+       
+      <img src="../vectores//Vector 3 (1).svg"id="vectorpie_pagina" alt="triangle with all three sides equal" />
+        <div class="footer_conteiner">
+          <div class="textos" >
+            <p>Terminos y condiciones</p>
+            <p>Politica de privacidad</p>
+            <p>Politica de cookies</p>
+          </div>
+        </div>
+    </footer>
 </body>
 </html>

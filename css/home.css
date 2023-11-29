@@ -2,22 +2,28 @@
     box-sizing: border-box;
 }
 body{
-    margin: auto;    
+    margin: auto;
+    /*display: grid;*/
 }
+
+/*HEADER*/
 #cabecera{
+
     width: 100%;
     border-bottom: 1px solid #000;
     box-shadow: 0px 2px 8px 3px rgba(0, 0, 0, 0.25);
-    margin: auto;
+    height: 144px;
+    /*margin: auto;*/
     /*margin: 0px;*/
-    padding: 2% 8%;
+    /*padding: 2% 8%;*/
     background: var(--base-colors-white, #FFF);
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    text-align: center;
-    color: 004C47;
-    font-family: 'Inter', Helvetica, sans-serif;
+    /*text-align: center;*/
+    flex-shrink: 0;
+    
+    
 }
 nav{
     display: flex;
@@ -25,38 +31,158 @@ nav{
     align-items: flex-start;
     gap: 16px;
     position: relative;
-    /*right: 50px;*/
+    right: 10px;
     bottom: 15px;
     margin: 0px;
 }
 #logotipo{
     width: 206px;
-    /*position: relative;
-    top: 80px;
-    left: 30px;*/
 }
-ul{
+
+#enlaceHome{
+    width: 206px;
+    position: absolute;
+    left: 37px;
+    top: 28px;
+    position: relative;
+    display: flex;
+}
+/*#contenedorLogo{
+    display: flex;
+align-items: flex-end;
+gap: 12px;
+position: absolute;
+left: 37px;
+top: 28px;
+}*/
+
+nav{
     /*display: inline-flex;*/
     /*padding: 2% 5%;*/
     justify-content: center;
-    align-items: center;
-    gap: 16px;
     width: 100%;
+    display: flex;
+    padding: 2% 5%;
+    align-items: flex-start;
+    gap: 16px;
 }
-ul li{
-    display: inline-flex;
+.enlaceBarra{
+    display: inline-block;
     text-decoration: none;
     justify-content: center;
+    padding: 10px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
 }
-nav ul li a {
+.enlaceBarra a{
     text-decoration: none;
-    color: 004C47;
+    color: #004C47;
+    font-family: 'Inter', Helvetica, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
+#btnPrimario{
+    display: flex;
+    border-radius: 32px;
+    height: 44px;
+    width: auto;
+    background: var(--contrast-orange-dark, #D25608);
+    box-shadow: 3px 3px 4px 0px rgba(93, 92, 92, 0.75);
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    color: var(--base-colors-white, #FFF);
+    text-align: center;
+    font-family: 'Inter', Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 28px */
+}
+
+#btnSecundario{
+    display: flex;
+    height: 44px;
+    width: 150px;
+    border-radius: 32px;
+    border: 1px solid var(--contrast-orange-dark, #D25608);
+    background: var(--base-colors-white, #FFF);
+    box-shadow: 3px 3px 4px 0px rgba(93, 92, 92, 0.75);
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--contrast-orange-dark, #D25608);
+    /* Textos/Texto descripción */
+    font-family: 'Inter', Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 28px */
+}
+
+/*MAIN*/
+
+
+/*FOOTER*/
 #pie_pagina{
+    
+    display: flex;
     width: 100%;
-    height: 400.737px;
-    fill: var(--background-colors-primary-green-dark, #004C47);
-    box-shadow: 0px 20px 35px 0px rgba(9, 202, 209, 0.65) inset;
+    grid-template-rows: auto 1fr;
+    position: relative;
+
+   /* flex-direction: column;*/
+   /* align-items: flex-start;*/
+    padding: 0;
+    align-items: center;
+    gap: 10px;
    
+}
+
+#vectorpie_pagina{
+    /*box-sizing: border-box;
+    display: flex;*/
+    width: 100%;
+    height: auto;
+   /* height: 100%;*/
+    fill: var(--background-colors-primary-green-dark, #004C47);
+    /*box-shadow: 0px 20px 35px 0px rgba(9, 202, 209, 0.65) inset;*/
+    /*object-fit: cover;*/
+   
+}
+
+.footer_conteiner{
+ /*display: flex;
+ background-color: rgba(255, 255, 255, 0.8);
+ padding: 10px;
+ margin-top: 10px; */
+ display: flex;
+ align-items: flex-end;
+ gap: 128px;
+ position: absolute;
+ left: 56px;
+ bottom: 76.188px;
+    
+}
+
+.footer_conteiner .textos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    color: var(--base-colors-white, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    
+   /* display: flex;
+    justify-content: space-around;*/
 }
