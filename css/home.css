@@ -138,7 +138,7 @@ nav{
     align-items: center;
     gap: 4%;
     justify-content: center;
-    z-index: 1;
+    z-index: 3;
 }
 
 /*Hero*/
@@ -207,7 +207,6 @@ nav{
     width: 1106px;
     color: #004C47;
     text-align: right;
-    /* Titulos/Título */
     font-family: Inria Sans;
     font-size: 48px;
     font-style: normal;
@@ -219,7 +218,7 @@ nav{
 #profesionales{
     display: flex;
     align-items: flex-start;
-    gap: 241px;
+    gap: 232px;
 }
 
 .profesional{
@@ -240,7 +239,6 @@ nav{
 .textoProfesional h3{
     color: var(--background-colors-primary-green-dark, #004C47);
     text-align: center;
-    /* Titulos/Título tarjeta */
     font-family: Inria Sans;
     font-size: 24px;
     font-style: normal;
@@ -252,7 +250,6 @@ nav{
 .textoProfesional p{
     color: var(--background-colors-primary-green-dark, #004C47);
     text-align: center;
-    /* Textos/Texto tarjeta */
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -272,3 +269,64 @@ nav{
     z-index: 0;
 }
 
+/*Consultas online*/
+#secConsultas {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+#secConsultas h2{
+    width: 413px;
+    height: 67px;
+    color: #004C47;
+    font-family: Inria Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 67.2px */
+}
+
+#consultas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+#consultas img{
+    width: 544px;
+    height: 470px;
+}
+
+#barraSeparadora{
+    width: 8px;
+    height: 232px;
+    background: var(--contrast-orange-medium, #E49A6B);
+}
+
+#parrafosConsulta p{
+    width: 432px;
+    color: var(--background-colors-primary-green-dark, #004C47);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 28px */
+}
+
+#vectorConsulta{
+    /*width: 1444px;
+    height: 2308.811px;*/
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    fill: var(--base-colors-white, #FFF);
+    position: absolute;
+    top: 1250px;
+    z-index: 1;
+}
+
+/*Mejora día a día*/
