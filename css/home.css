@@ -38,7 +38,6 @@ nav{
 
 .enlaceBarra{
     padding-top: 10px;
-    width: auto;
 }
 
 .enlaceBarra a{
@@ -50,6 +49,7 @@ nav{
     font-weight: 600;
     line-height: normal;
     padding: 10px 14px;
+    width: auto;
 }
 
 .barraBtn a{
@@ -110,7 +110,7 @@ nav{
     padding: 6px 4px 6px 4px;
     justify-content: flex-end;
     align-items: flex-start;
-    width: 25%;
+    width: 36px;
 }
 
 #btnBusqueda{
@@ -133,24 +133,18 @@ nav{
 }
 
 /*MAIN*/
-#contenedor{
-    display: flex;
-    gap: 24px;
-    align-content: center;
-}
-
 .secciones{
     display: flex;
-    width: 1104px;
     align-items: center;
-    gap: 128px;
-    /*justify-content: center;*/
+    gap: 4%;
+    justify-content: center;
+    z-index: 1;
 }
 
+/*Hero*/
 .hero h1{
     width: 432px;
     color: var(--background-colors-primary-green-dark, #004C47);
-    /* Titulos/Hero */
     font-family: 'Inria Sans';
     font-size: 58px;
     font-style: normal;
@@ -170,17 +164,13 @@ nav{
 }
 
 .hero a{
-    
     padding: 8px 16px;
-    
     align-items: center;
     border-radius: 32px;
     background: var(--contrast-orange-dark, #D25608);
-
     /* Sombras botones */
     box-shadow: 3px 3px 4px 0px rgba(93, 92, 92, 0.75);
     color: var(--base-colors-white, #FFF);
-
     /* Textos/Texto descripción */
     font-family: 'Inter', Helvetica, sans-serif;
     font-size: 20px;
@@ -195,3 +185,90 @@ nav{
     height: 488px;
     flex-shrink: 0;
 }
+
+#contenedor{
+    display: flex;
+    gap: 24px;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*Profesionales a tu alcance*/
+#secProfesionales{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 60px;
+}
+
+#secProfesionales h2{
+    width: 1106px;
+    color: #004C47;
+    text-align: right;
+    /* Titulos/Título */
+    font-family: Inria Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 67.2px */
+    text-align: right;
+}
+
+#profesionales{
+    display: flex;
+    align-items: flex-start;
+    gap: 241px;
+}
+
+.profesional{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.textoProfesional{
+    display: flex;
+    width: 208px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.textoProfesional h3{
+    color: var(--background-colors-primary-green-dark, #004C47);
+    text-align: center;
+    /* Titulos/Título tarjeta */
+    font-family: Inria Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+    margin: auto;
+}
+
+.textoProfesional p{
+    color: var(--background-colors-primary-green-dark, #004C47);
+    text-align: center;
+    /* Textos/Texto tarjeta */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+}
+
+#vectorProfesionales{
+    /*width: 1441px;
+    height: 1546px;*/
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    fill: rgba(0, 151, 148, 0.15);
+    position: absolute;
+    top: 620px;
+    z-index: 0;
+}
+
