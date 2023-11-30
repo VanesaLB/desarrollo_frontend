@@ -157,6 +157,7 @@ nav ul li a {
    /* line-height: 140%; /* 22.4px */
 
 }
+
 #pie_pagina{
     
     display: flex;
@@ -181,7 +182,7 @@ nav ul li a {
     /*box-shadow: 0px 20px 35px 0px rgba(9, 202, 209, 0.65) inset;*/
     /*object-fit: cover;*/
    
-}
+}*
 .footer_conteiner{
  /*display: flex;
  background-color: rgba(255, 255, 255, 0.8);
@@ -189,7 +190,8 @@ nav ul li a {
  margin-top: 10px; */
  display: flex;
  align-items: flex-end;
- gap: 128px;
+ 
+ /*gap: 128px;*/
  position: absolute;
  left: 56px;
  bottom: 76.188px;
@@ -197,10 +199,12 @@ nav ul li a {
 }
 
 .footer_conteiner .textos {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:128px;
+   /* flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 8px;*/
     color: var(--base-colors-white, #FFF);
     font-family: Inter;
     font-size: 16px;
@@ -208,6 +212,21 @@ nav ul li a {
     font-weight: 500;
     line-height: 140%;
     
+    
    /* display: flex;
     justify-content: space-around;*/
+}
+.footer_conteiner .textoiconos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    color: var(--base-colors-white, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+
+
 }
