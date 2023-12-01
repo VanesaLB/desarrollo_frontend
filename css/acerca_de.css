@@ -827,3 +827,21 @@ background: var(--base-colors-white, #FFF);
     justify-content: center;
     flex-direction: column;
 }
+
+/*--------------------------------FONDOS DE LA PAGINA-------------------------------*/
+
+
+#fondoTestimonios{
+    /*width: 1441px;
+height: 2058px;
+*/
+    
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    fill: rgba(0, 151, 148, 0.15);
+    position: absolute;
+    /*bottom: auto;*/
+   
+    z-index: 0;
+}
