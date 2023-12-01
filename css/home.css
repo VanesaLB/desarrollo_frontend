@@ -80,6 +80,15 @@ nav{
     line-height: 140%; /* 28px */
 }
 
+#btnPrimario:hover{
+    background: var(--contrast-orange-dark, #004C47);
+}
+
+#btnPrimario:active{
+    background: var(--contrast-orange-dark, #004C47);
+    box-shadow: 0px 0px 0px 0px rgba(93, 92, 92, 0.75);
+}
+
 #btnSecundario{
     display: flex;
     height: 44px;
@@ -99,6 +108,17 @@ nav{
     font-style: normal;
     font-weight: 500;
     line-height: 140%; /* 28px */
+}
+
+#btnSecundario:hover{
+    border: 1px solid var(--contrast-orange-dark, #004C47);
+    color: var(--contrast-orange-dark, #004C47);
+}
+
+#btnSecundario:active{
+    border: 1px solid var(--contrast-orange-dark, #004C47);
+    color: var(--contrast-orange-dark, #004C47);
+    box-shadow: 0px 0px 0px 0px rgba(93, 92, 92, 0.75);
 }
 
 /*LUPA*/
@@ -183,6 +203,15 @@ nav{
     font-weight: 500;
     line-height: 140%; /* 28px */
     text-decoration: none;
+}
+
+.hero a:hover{
+    background: var(--contrast-orange-dark, #004C47);
+}
+
+.hero a:active{
+    background: var(--contrast-orange-dark, #004C47);
+    box-shadow: 0px 0px 0px 0px rgba(93, 92, 92, 0.75);
 }
 
 .hero img{
@@ -337,14 +366,15 @@ nav{
 
 /*Mejora día a día*/
 #secVideos{
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 54px;
+    width: 1000px;
 }
 
 #secVideos h2{
-    width: 1083px;
+    width: 100%;
     color: #004C47;
     text-align: right;
     font-family: Inria Sans;
@@ -357,12 +387,14 @@ nav{
 #videos{
     display: flex;
     align-items: flex-start;
-    gap: 226px;
+    gap: 34%;
+    justify-content: flex-end;
+
 }
 
 .grupoVideo{
     width: 208px;
-    height: 280px;
+    /*height: 280px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -379,11 +411,18 @@ nav{
     line-height: 140%; /* 22.4px */
 }
 
-video{
+/*TRANSICION*/
+.grupoVideo video{
     width: 208px;
     height: 208px;
     border: 4px solid var(--base-colors-white, #FFF);
     background-color: #004C47;
+    transition: all 2s ease;
+}
+
+.grupoVideo video:hover{
+    height: 180px;
+    background-color: #FFF;
 }
 
 #vectorVideos{
@@ -477,15 +516,16 @@ video{
 
 /*FOOTER*/
 #pie_pagina{
-    
+    width: 100%;
     display: flex;
     align-items: flex-end;
-    gap: 128px;
-    position: absolute;
-    left: 56px;
+    gap: 9%;
+    position: relative;
+    justify-content: center;
+    /*left: 1%;*/
     bottom: auto;
     z-index: 5;
-    margin-top: 240px;
+    margin-top: 16%;
     /*margin-left: 7%;
     margin-right: 0px;*/
     /*margin-top: 140px;*/
@@ -499,23 +539,13 @@ video{
     align-items: center;
     gap: 10px;*/
 }
-/*
-#footer_conteiner{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    gap: 128px;
-    z-index: 5;
-    margin-top: 200px;
-    flex-direction: row;
-    /*left: 56px;
-*/
 
 .columna{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 8px;
+    width: auto;
 }
 
 .columna p{
@@ -525,7 +555,7 @@ video{
     font-style: normal;
     font-weight: 500;
     line-height: 140%; /* 22.4px */
-    width: 208px;
+    width: 12em;
     /*height: 17px;*/
     margin: 0px;
 }
@@ -538,16 +568,15 @@ video{
     font-style: normal;
     font-weight: 500;
     line-height: 140%; /* 22.4px */
-    width: 208px;
-    height: 17px;
-    margin: 0px;
+    /*width: 208px;
+    height: 17px;*/
 }
 
 .columna#redes{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 16px;
 }
 
 #emailYTelf {
@@ -559,7 +588,6 @@ video{
 
 #emailYTelf p a img{
     width: 24px;
-    height: 24.015px;
 }
 
 #emailYTelf p a{
@@ -570,20 +598,20 @@ video{
     font-style: normal;
     font-weight: 500;
     line-height: 140%; /* 22.4px */
-    width: 208px;
-    height: 17px;
+    /*width: 208px;
+    height: 17px;*/
     margin: 0px;
 }
 
 #imgredes a img{
     width: 35.534px;
-height: 35.534px;
+    height: 35.534px;
 }
 
 .enlace{
     display: flex;
-align-items: center;
-gap: 8px;
+    align-items: center;
+    gap: 8px;
 }
 
 #vectorpie_pagina{
