@@ -20,6 +20,7 @@ body{
     justify-content: center;
     /*text-align: center;*/
     flex-shrink: 0;
+    z-index: 5;
 }
 
 #logotipo{
@@ -143,7 +144,7 @@ nav{
     display: inline-flex;
 align-items: flex-start;
 gap: 128px;
-
+z-index: 5;
 }
 #textoSobreNosotros {
 
@@ -229,6 +230,7 @@ flex-shrink: 0;
     width: 1103px;
     align-items: center;
     gap: 56px;
+    z-index: 5;
 
 }
 
@@ -326,6 +328,7 @@ line-height: 140%; /* 33.6px */
 flex-direction: column;
 align-items: center;
 gap: 46px;
+z-index: 5;
 }
 
 #tituloTestimonios{
@@ -522,6 +525,8 @@ line-height: 140%; /* 22.4px */
     justify-content: center;
     align-items: center;
     gap: 40px;
+    z-index: 5;
+    
 }
 #tituloContacto{
     color: #004C47;
@@ -622,6 +627,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 28px;
+z-index: 5;
 }
 #TituloConsultanos{
     color: #004C47;
@@ -826,7 +832,7 @@ background: var(--base-colors-white, #FFF);
     /*flex-direction: row;*/
     justify-content: center;
     flex-direction: column;
-    z-index: 5;
+   
 }
 
 /*--------------------------------FONDOS DE LA PAGINA-------------------------------*/
@@ -837,7 +843,7 @@ background: var(--base-colors-white, #FFF);
 height: 2058px;
 */
     width: 100%;
-    height: auto;
+   
     flex-shrink: 0;
     fill: rgba(0, 151, 148, 0.15);
     position:absolute;
@@ -846,9 +852,36 @@ height: 2058px;
     z-index: 1;
 }
 
+#vectorContacto {
+    width: 100%;
+
+flex-shrink: 0;
+
+fill: var(--base-colors-white, #FFF);
+position:absolute;
+    bottom: auto;
+top: 104em;
+z-index: 2;
+
+}
+
+#vectorConsulta {
+    width: 100%;
+    
+flex-shrink: 0;
+fill: rgba(0, 76, 71, 0.15);
+
+position:absolute;
+    bottom: auto;
+top: 127em;
+z-index: 3;
+}
+
 #vectorpie_pagina{
     /*width: 1444px;
     height: 2308.811px;*/
+    width: 100%;
+    
     flex-shrink: 0;
     width: 100%;
     height: auto;
@@ -857,7 +890,7 @@ height: 2058px;
     
     position: absolute;
     /*bottom: auto;*/
-    top: 3220px;
+    top: 168em;
     z-index: 4;
 }
 /*-------------------------------------------FOOTER-------------------------------------------*/
