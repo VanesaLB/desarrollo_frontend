@@ -134,7 +134,7 @@ nav{
 }
 
 
-/*-------BLOQUE 1------------- */
+/*-----------------------------------------------BLOQUE 1-------------------------------------------------- */
 #bloqueSobreNosotros{
 
     margin-top: 96px;
@@ -223,7 +223,7 @@ height: 356px;
 flex-shrink: 0;
 }
 
-/*-------BLOQUE 2------------- */
+/*-------------------------------------------------------------BLOQUE 2------------------------------------------------------- */
 #bloqueNuestrosPsicologos{
     display: flex;
     width: 1103px;
@@ -811,6 +811,10 @@ background: var(--base-colors-white, #FFF);
 
 
 
+
+
+/*------------------------------------------------FINAAAAAAAAAAAAL BLOQUE 5--------------------------------------------*/
+
 #contenedor {
 
     width: auto;
@@ -823,6 +827,3 @@ background: var(--base-colors-white, #FFF);
     justify-content: center;
     flex-direction: column;
 }
-
-/*------------------------------------------------FINAAAAAAAAAAAAL BLOQUE 5--------------------------------------------*/
-
