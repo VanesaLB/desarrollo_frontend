@@ -831,17 +831,16 @@ background: var(--base-colors-white, #FFF);
 /*--------------------------------FONDOS DE LA PAGINA-------------------------------*/
 
 
-#fondoTestimonios{
+#vectorTestimonios{
     /*width: 1441px;
 height: 2058px;
 */
-    
     width: 100%;
     height: auto;
     flex-shrink: 0;
     fill: rgba(0, 151, 148, 0.15);
-    position: absolute;
-    /*bottom: auto;*/
+    position:absolute;
+    bottom: auto;
    
     z-index: 0;
 }
