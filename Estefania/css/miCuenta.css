@@ -77,11 +77,12 @@ nav{
     justify-content: flex-end;
     align-items: flex-start;
     width: 36px;*/
-    width: 316px;
-    padding: 6px 16px 6px 43px;
+    width: 284px;
+    padding: 6px 16px 6px 0px;
    /* justify-content: flex-end;
     align-items: flex-start;
     flex-shrink: 0;*/
+   /* margin-left: 48px;*/
     
     /*border-radius: 16px*/
 }
@@ -97,17 +98,25 @@ nav{
 
 #lupa{
     fill: #004C47;
-    width: 284px;
+    width: 20px;
     height: 19.999px;
+   /* padding-right: 0;*/
     
-   /* border: 1px solid var(--background-colors-primary-green-dark, #004C47);
-    background: var(--base-colors-white, #FFF);*/
+    border: 1px solid var(--background-colors-primary-green-dark, #004C47);
+    background: var(--base-colors-white, #FFF);
     
 }
 
 #buscador{
     display: flex;
     align-items: center;
+    width: 316px;
+    margin-left: 48px;
+
+   /* padding: 7px 32px 7px 0px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;*/
     
 }
 #fotonavegacion{
