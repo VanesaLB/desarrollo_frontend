@@ -246,7 +246,6 @@ flex-shrink: 0;
     align-items: center;
     gap: 4rem;
     z-index: 5;
-    flex-direction: column;
 
 }
 
@@ -853,7 +852,7 @@ height: 2058px;
     fill: rgba(0, 151, 148, 0.15);
     position:absolute;
     bottom: auto;
-    top: 65em;
+    top: 67rem;
     z-index: 1;
 }
 
@@ -865,7 +864,7 @@ flex-shrink: 0;
 fill: var(--base-colors-white, #FFF);
 position:absolute;
     bottom: auto;
-top: 104em;
+top: 104rem;
 z-index: 2;
 
 }
@@ -878,7 +877,7 @@ fill: rgba(0, 76, 71, 0.15);
 
 position:absolute;
     bottom: auto;
-top: 127em;
+top: 127rem;
 z-index: 3;
 }
 
@@ -1079,7 +1078,19 @@ gap: 2rem;
 margin-left: 6rem;
 }
 
+#botonConsulta{
+    
+    display: flex;
+padding: 1rem 2rem;
+justify-content: center;
+align-items: center;
+
+border-radius: 32px;
+background: var(--contrast-orange-dark, #D25608);
+/* Sombras botones */
+box-shadow: 3px 3px 4px 0px rgba(93, 92, 92, 0.75);
 }
+
 
 /*-------------------------------------------------------------BLOQUE 2 MEDIAAAAAAAA TABLEEEEEET------------------------------------------------------- */
 #bloqueNuestrosPsicologos{
@@ -1120,6 +1131,88 @@ flex-shrink: 0;
 background:#E49A6B;
 }
 
+/*---------------------------------------------BLOQUE 3---------------------------------------- */
+
+
+#bloqueTestimonios {
+
+    width: 100%;
+    flex-wrap: wrap;
+   
+}
+
+
+/*TESTIMONIOS*/
+
+#trestestimonios {
+    
+flex-direction: column;
+gap: 2rem;
+}
+
+/*BLOQUE 4 Y BLOQUE 5 EN TABLET SE VEN BIEN */
+
+/*VECTOREESSSSSS DE FODNOOOOOOOOOO TABLEEEEETTTTTTTTTTT-----------------------*/
+
+#vectorTestimonios{
+    /*width: 1441px;
+height: 2058px;
+*/
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    fill: rgba(0, 151, 148, 0.15);
+    position:absolute;
+    bottom: auto;
+    top: 118rem;
+    z-index: 1;
+}
+
+#vectorContacto {
+    width: 100%;
+   
+
+flex-shrink: 0;
+opacity: 100%;
+fill: var(--base-colors-white, #FFF);
+position:absolute;
+    bottom: auto;
+top: 200rem;
+z-index: 2;
+
+}
+
+#vectorConsulta {
+    width: 100%;
+    
+flex-shrink: 0;
+fill: rgba(0, 76, 71, 0.15);
+
+position:absolute;
+    bottom: auto;
+top: 223rem;
+z-index: 3;
+}
+
+#vectorpie_pagina{
+    /*width: 1444px;
+    height: 2308.811px;*/
+    width: 100%;
+    
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    fill: #004C47;
+    
+    position: absolute;
+    /*bottom: auto;*/
+    top: 268rem;
+    z-index: 4;
+}
+
+
+}
 
 
 @media screen and (max-width:575px) {
@@ -1611,7 +1704,7 @@ gap: 4rem;
     height: 2058px;
     */
         width: 100%;
-       
+        height: auto;
         flex-shrink: 0;
         fill: rgba(0, 151, 148, 0.15);
         position:absolute;
@@ -1622,13 +1715,14 @@ gap: 4rem;
     
     #vectorContacto {
         width: 100%;
+       
     
     flex-shrink: 0;
-    
+    opacity: 100%;
     fill: var(--base-colors-white, #FFF);
     position:absolute;
         bottom: auto;
-    top: 20rem;
+    top: 0rem;
     z-index: 2;
     
     }
@@ -1641,7 +1735,7 @@ gap: 4rem;
     
     position:absolute;
         bottom: auto;
-    top: 300rem;
+    top: 204rem;
     z-index: 3;
     }
     
@@ -1658,7 +1752,7 @@ gap: 4rem;
         
         position: absolute;
         /*bottom: auto;*/
-        top: 400rem;
+        top: 314rem;
         z-index: 4;
     }
 
