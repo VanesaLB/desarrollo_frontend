@@ -605,8 +605,12 @@ nav{
     #vectorpie_pagina {
         width: 100%;
         height: auto;
+        background-image: url("../vectores/Vector 3_movil.svg");
        /* box-sizing: border-box;
         display: flex;*/
+    }
+    #vectorpie_paginamovil{
+        width: 100%;
     }
     .footer_conteiner {
     
