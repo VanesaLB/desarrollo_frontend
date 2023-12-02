@@ -6,6 +6,20 @@ body{
     margin: auto;
 }
 
+#contenedor {
+
+    width: auto;
+    height: auto; 
+    display: flex;
+    gap: 6rem;
+    /*align-content: center;*/
+    align-items: center;
+    /*flex-direction: row;*/
+    justify-content: center;
+    flex-direction: column;
+
+   
+}
 /*HEADER*/
 #cabecera{
     width: 100%;
@@ -138,29 +152,30 @@ nav{
 /*-----------------------------------------------BLOQUE 1-------------------------------------------------- */
 #bloqueSobreNosotros{
 
-    margin-top: 96px;
-    margin-left: 167px;
-    margin-right: 127px;
-    display: inline-flex;
-align-items: flex-start;
-gap: 128px;
+    width: 50%;
+    margin-top: 6rem;
+    margin-left: 18rem;
+    margin-right: 12rem;
+    display: flex;
+    align-items: center;
+gap: 6 rem;
 z-index: 5;
 }
+
 #textoSobreNosotros {
 
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-gap: 16px;
+gap: 2rem;
 }
 
 #tituloSobreNosotros{
 
-    display: flex;
+
 width: 433px;
-height: 67px;
-flex-direction: column;
-justify-content: center;
+
+
 
 color: #004C47;
 
@@ -187,7 +202,7 @@ line-height: 140%; /* 33.6px */
 
 #texto2SobreNosotros{
     width: 432px;
-height: 48px;
+
 
 color: var(--background-colors-primary-green-dark, #004C47);
 /* Textos/Texto descripción */
@@ -200,7 +215,7 @@ line-height: 140%; /* 28px */
 
 #botonConsulta{
     display: flex;
-padding: 8px 16px;
+padding: 1rem 2rem;
 justify-content: center;
 align-items: center;
 
@@ -219,7 +234,7 @@ box-shadow: 3px 3px 4px 0px rgba(93, 92, 92, 0.75);
 #imagenSobreNosotros {
 
     
-    width: 585px;
+width: 585px;
 height: 356px;
 flex-shrink: 0;
 }
@@ -227,9 +242,9 @@ flex-shrink: 0;
 /*-------------------------------------------------------------BLOQUE 2------------------------------------------------------- */
 #bloqueNuestrosPsicologos{
     display: flex;
-    width: 1103px;
+    width: 50%;
     align-items: center;
-    gap: 56px;
+    gap: 4rem;
     z-index: 5;
 
 }
@@ -254,8 +269,8 @@ flex-shrink: 0;
 
 #separadorNaranja1 {
 
-    width: 8px;
-height: 312px;
+    width: 0.5rem;
+height: 19.5rem;
 flex-shrink: 0;
 
 background:#E49A6B;
@@ -265,17 +280,15 @@ background:#E49A6B;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 2rem;
     
 }
 
 #tituloNuestrosPsicologos {
 
-    display: flex;
+
 width: 432px;
-height: 48px;
-flex-direction: column;
-justify-content: center;
+
 
 color: #004C47;
 
@@ -289,11 +302,10 @@ line-height: 140%; /* 67.2px */
 }
 
 #texto1NuestrosPsicologos {
-    display: flex;
+   
     width: 432px;
     height: 96px;
-    flex-direction: column;
-    justify-content: center;
+    
 
     color: #004C47;
 /* Titulos/Título tarjeta */
@@ -308,7 +320,7 @@ line-height: 140%; /* 33.6px */
 #texto2NuestrosPsicologos {
     
     width: 432px;
-    height: 143px;
+    
     
     color: #004C47;
     /* Textos/Texto descripción */
@@ -324,10 +336,11 @@ line-height: 140%; /* 33.6px */
 
 
 #bloqueTestimonios {
-    display: inline-flex;
-flex-direction: column;
+
+    display: flex;
+    flex-direction: column;
 align-items: center;
-gap: 46px;
+gap: 3rem;
 z-index: 5;
 }
 
@@ -348,16 +361,16 @@ line-height: 140%; /* 67.2px */
 #trestestimonios {
     display: flex;
 align-items: flex-start;
-gap: 212px;
+gap: 13.5rem;
 }
 
 #testimonio1 {
     display: flex;
     width: 232px;
-    height: 394px;
+    
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
 }
 
 #contenedorImagenTestimonio1{
@@ -374,11 +387,10 @@ gap: 212px;
 box-shadow: 6px 6px 4px 0px rgba(255, 255, 255, 0.50) inset, 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
 }
 #tituloTestimonio1{
-    display: flex;
+    
     width: 232px;
     height: 23px;
-    flex-direction: column;
-    justify-content: center;
+    
 
     color: #000;
 
@@ -393,7 +405,7 @@ line-height: 140%; /* 33.6px */
 
 #textoTestimonio1{
     width: 232px;
-    height: 62px;
+    
 
     color:#004C47;
 
@@ -408,18 +420,19 @@ line-height: 140%; /* 22.4px */
 }
 
 #testimonio2 {
-    display: flex;
-height: 394px;
+display: flex;
+width: 232px;
+
 flex-direction: column;
 align-items: center;
-gap: 16px;
+gap: 1rem;
 }
 
 #contenedorImagenTestimonio2{
   
 }
 #imagenTestimonio2{
-    width: 208px;
+width: 208px;
 height: 208px;
 flex-shrink: 0;
 
@@ -431,11 +444,10 @@ box-shadow: 6px 6px 4px 0px rgba(255, 255, 255, 0.50) inset, 4px 4px 4px 0px rgb
 
 }
 #tituloTestimonio2{
-    display: flex;
+    
 width: 232px;
-height: 23px;
-flex-direction: column;
-justify-content: center;
+
+
 
 color: #000;
 text-align: center;
@@ -449,8 +461,8 @@ line-height: 140%; /* 33.6px */
 
 }
 #textoTestimonio2{
-    width: 232px;
-height: 87px;
+width: 232px;
+
 
 color: var(--background-colors-primary-green-dark, #004C47);
 text-align: center;
@@ -464,8 +476,8 @@ line-height: 140%; /* 22.4px */
 }
 
 #testimonio3 {
-    display: flex;
-height: 394px;
+display: flex;
+width: 232px;
 flex-direction: column;
 align-items: center;
 gap: 16px;
@@ -486,11 +498,10 @@ gap: 16px;
     box-shadow: 6px 6px 4px 0px rgba(255, 255, 255, 0.50) inset, 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
 }
 #tituloTestimonio3{
-    display: flex;
+    
     width: 232px;
-    height: 23px;
-    flex-direction: column;
-    justify-content: center;
+    
+    
 
     color: #000;
 text-align: center;
@@ -504,7 +515,7 @@ line-height: 140%; /* 33.6px */
 }
 #textoTestimonio3{
     width: 232px;
-height: 115px;
+
 
 color: var(--background-colors-primary-green-dark, #004C47);
 text-align: center;
@@ -524,7 +535,7 @@ line-height: 140%; /* 22.4px */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 2rem;
     z-index: 5;
     
 }
@@ -542,7 +553,7 @@ line-height: 140%; /* 22.4px */
 #bloqueTelefonoEmail{
     display: flex;
     align-items: flex-start;
-    gap: 240px;
+    gap: 6rem;
 }
 #bloqueTelefono{
     display: flex;
@@ -551,7 +562,7 @@ line-height: 140%; /* 22.4px */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 3rem;
 }
 #bloqueIconoTelefono{
 
@@ -562,9 +573,10 @@ line-height: 140%; /* 22.4px */
     flex-shrink: 0;
     fill: #004C47;
 }
+
 #textoTelefono{
     width: 208px;
-    height: 68px;
+    
     flex-shrink: 0;
 
     color: #004C47;
@@ -584,7 +596,7 @@ line-height: 140%; /* 22.4px */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 48px;
+    gap: 3rem;
 }
 #bloqueIconoEmail{
 
@@ -598,8 +610,9 @@ fill: #004C47;
 
 }
 #textoEmail{
+
     width: 208px;
-height: 68px;
+
 flex-shrink: 0;
 
 color:  #004C47;
@@ -622,13 +635,15 @@ line-height: 140%; /* 22.4px */
 
 
 #bloqueConsultanos{
-    display: inline-flex;
+
+display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-gap: 28px;
+gap: 2rem;
 z-index: 5;
 }
+
 #TituloConsultanos{
     color: #004C47;
 text-align: center;
@@ -644,37 +659,37 @@ line-height: 140%; /* 67.2px */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 2rem;
 }
 #formulario{
-    display: flex;
+display: flex;
 flex-direction: column;
 align-items: center;
-gap: 24px;
+gap: 2rem;
 }
 
 #bloqueFormularioSinEnviar{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 15px;
+    gap: 2rem;
 }
 #bloqueNombreTelefonoEmail{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 15px;
+    gap: 1rem;
 }
 #bloqueNombreTelefono{
     display: flex;
     align-items: flex-start;
-    gap: 32px;
+    gap: 2rem;
 }
 #packNombre{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 7px;
+    gap: 0.5rem;
 }
 #labelNombre{
     width: 96px;
@@ -696,9 +711,9 @@ line-height: 140%; /* 22.4px */
     height: 34px;
     padding: 6px 126px 6px 16px;
     align-items: flex-start;
-    gap: 10px;
+    gap: 0.6rem;
 
-    border-radius: 8px;
+    border-radius: 0.5rem;
 border: 1px solid #004C47;
 background: var(--base-colors-white, #FFF);
 
@@ -708,7 +723,7 @@ background: var(--base-colors-white, #FFF);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 7px;
+    gap: 0.5rem;
 }
 #labelTelefono{
     width: 96px;
@@ -729,9 +744,9 @@ line-height: 140%; /* 22.4px */
     height: 34px;
     padding: 6px 126px 6px 16px;
     align-items: flex-start;
-    gap: 10px;
+    gap: 0.6rem;
 
-    border-radius: 8px;
+    border-radius: 0.5rem;
 border: 1px solid #004C47;
 background: var(--base-colors-white, #FFF);
 }
@@ -739,7 +754,7 @@ background: var(--base-colors-white, #FFF);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 7px;
+    gap: 0.5rem;
 }
 #labelEmail{
     width: 96px;
@@ -760,17 +775,17 @@ line-height: 140%; /* 22.4px */
     height: 34px;
     padding: 6px 126px 6px 16px;
     align-items: flex-start;
-    gap: 10px;
+    gap: 0.6rem;
 
-    border-radius: 8px;
+    border-radius: 0.5rem;
 border: 1px solid #004C47;
 background: var(--base-colors-white, #FFF);
 }
 #packConsulta{
-    display: flex;
+display: flex;
 flex-direction: column;
 align-items: flex-start;
-gap: 8px;
+gap: 0.5rem;
 }
 
 #labelConsulta{
@@ -792,9 +807,9 @@ line-height: 140%; /* 22.4px */
     height: 144px;
     padding: 6px 126px 6px 16px;
     align-items: flex-start;
-    gap: 10px;
+    gap: 0.6rem;
 
-    border-radius: 8px;
+    border-radius: 0.5rem;
 border: 1px solid  #004C47;
 background: var(--base-colors-white, #FFF);
 }
@@ -802,12 +817,13 @@ background: var(--base-colors-white, #FFF);
    
 }
 
-#botonEnviarFormulario{  display: flex;
-    padding: 8px 16px;
+#botonEnviarFormulario{  
+    display: flex;
+    padding: 0.5rem 1rem;
     justify-content: center;
     align-items: center;
     
-    border-radius: 32px;
+    border-radius: 2rem;
     background: var(--contrast-orange-dark, #D25608);
     
     /* Sombras botones */
@@ -821,19 +837,7 @@ background: var(--base-colors-white, #FFF);
 
 /*------------------------------------------------FINAAAAAAAAAAAAL BLOQUE 5--------------------------------------------*/
 
-#contenedor {
 
-    width: auto;
-    height: auto; 
-    display: flex;
-    gap: 96px;
-    /*align-content: center;*/
-    align-items: center;
-    /*flex-direction: row;*/
-    justify-content: center;
-    flex-direction: column;
-   
-}
 
 /*--------------------------------FONDOS DE LA PAGINA-------------------------------*/
 
@@ -1004,4 +1008,161 @@ height: 35.534px;
 align-items: center;
 gap: 8px;
 }
+/*----------------------------------------------------------------MEEEEEEEEEEEDIIIIIIIIIIIIIAAAAAAAAAAAAAAAAAAA------------------------*/
+@media screen and (max-width:992px) {
 
+    #contenedor {
+
+        width: auto;
+        height: auto; 
+        display: flex;
+        gap: 4rem;
+        /*align-content: center;*/
+        align-items: center;
+        /*flex-direction: row;*/
+        justify-content: center;
+        flex-direction: column;
+    
+       
+    }
+
+/*-----------------------------------------------BLOQUE 1-------------------------------------------------- */
+#bloqueSobreNosotros{
+
+    width: 60%;
+    margin-top: 6rem;
+    margin-left: 6rem;
+    margin-right: 12rem;
+    
+    flex-direction: column;
+gap: 6 rem;
+
+}
+
+#textoSobreNosotros {
+width: 60%;
+
+gap: 2rem;
+}
+
+#imagenSobreNosotros {
+margin-left: 6rem;
+}
+
+}
+
+@media screen and (max-width:575px) {
+
+    #contenedor {
+
+        width: auto;
+        height: auto; 
+        display: flex;
+        gap: 4rem;
+        /*align-content: center;*/
+        align-items: center;
+        align-content: center;
+        /*flex-direction: row;*/
+        justify-content: center;
+        flex-direction: column;
+        
+    
+       
+    }
+
+    /*-----------------------------------------------BLOQUE 1-------------------------------------------------- */
+#bloqueSobreNosotros{
+
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    
+    flex-direction: column;
+    gap: 4rem;
+
+}
+
+#textoSobreNosotros {
+width: 100%;
+text-align: center;
+align-content: center;
+gap: 2rem;
+}
+
+#tituloSobreNosotros{
+
+
+    width: 100%;
+    
+    
+    
+    color: #004C47;
+    
+    /* Titulos/Título */
+    font-family: Inria Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 67.2px */
+    }
+    
+    #texto1SobreNosotros{
+        width: 100%;
+    
+    
+        color: #004C47;
+    /* Titulos/Título tarjeta */
+    font-family: Inria Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+    }
+    
+    #texto2SobreNosotros{
+        width: 100%;
+    
+    
+    color: var(--background-colors-primary-green-dark, #004C47);
+    /* Textos/Texto descripción */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 28px */
+    }
+    
+    #botonConsulta{
+        width: 100%;
+        display: flex;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 32px;
+    background: var(--contrast-orange-dark, #D25608);
+    /* Sombras botones */
+    box-shadow: 3px 3px 4px 0px rgba(93, 92, 92, 0.75);
+    }
+    
+    #contenedorImagenNuestrosPsicologos{
+        width: 100%;
+    height: auto;
+        flex-shrink: 0;
+    }
+    
+    #imagenSobreNosotros {
+    
+        
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    }
+    
+
+#imagenSobreNosotros {
+margin-left: 1rem;
+}
+
+}
