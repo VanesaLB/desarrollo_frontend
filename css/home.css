@@ -703,6 +703,7 @@ div.enlaceBarra{
     justify-content: center;
     /*text-align: center;*/
     flex-shrink: 0;
+    margin-bottom: 40px;
 }
 
 #logotipo{
@@ -837,7 +838,7 @@ div.enlaceBarra{
 }
 
 #vectorProfesionales{
-    top: 500px;
+    top: 530px;
 }
 
 /*Consultas online*/
@@ -871,10 +872,108 @@ div.enlaceBarra{
 }
 
 #vectorConsulta{
-    top: 1100px;
+    top: 1150px;
 }
 
+/*Mejora día a día*/
+#secVideos{
+    margin: auto;
+    width: 100%;
+}
 
+#videos{
+    gap: 12%;
+}
+
+.grupoVideo{
+    width: 208px;
+    /*height: 280px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#vectorVideos{
+    top: 1670px;
+}
+
+/*Datos y cifras*/
+#imagenDatos{
+    width: 55%;
+}
+
+.puntoParrafo{
+    width: 100%;
+}
+
+.puntoParrafo p{
+    width: 90%;
+}
+
+.puntoParrafo img{
+    width: 24px;
+}
+
+#puntosDatos{
+    gap: 24px;
+    margin-top: 56px;
+}
+
+#secDatos{
+    margin: auto;
+    width: 100%;
+}
+
+#datosTextImg{
+    margin: auto;
+    width: 100%;
+    align-items: center;
+}
+
+#vectorDatos{
+    top: 2250px;
+}
+
+/*FOOTER*/
+#pie_pagina{
+    width: 100%;
+    margin: auto;
+    gap: 5%;
+    margin-top: 16%;
+}
+
+.columna p{
+    font-size: 14px;
+}
+
+.columna p a{
+    font-size: 14px;
+}
+
+#emailYTelf {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+#emailYTelf p a img{
+    width: 22px;
+}
+
+#emailYTelf p a{
+    font-size: 14px;
+}
+
+#imgredes a img{
+    width: 26px;
+    height: 26px;
+}
+
+#vectorpie_pagina{
+    top: 2860px;
+}
 
 }
 
