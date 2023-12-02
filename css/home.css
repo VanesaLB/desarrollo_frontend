@@ -6,6 +6,50 @@ body{
     margin: auto;
 }
 
+#animacionMover1:hover {
+
+    animation: animacionMovimiento1 3s ease-out 0s infinite;
+
+}
+
+@keyframes animacionMovimiento1{
+    0%,100%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(6rem);
+    }
+}
+
+#animacionMover2:hover {
+
+    animation: animacionMovimiento2 3s ease-out 0s infinite;
+
+}
+
+@keyframes animacionMovimiento2{
+    0%,100%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(6rem);
+    }
+}
+
+#imagenDatos:hover {
+
+    animation: animacionMovimiento3 3s ease-out 0s infinite;
+
+}
+
+@keyframes animacionMovimiento3{
+    0%,100%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(6rem);
+    }
+}
 /*@font-face {
     font-family: 'Inter';
     src: url(https://fonts.googleapis.com/css?family=Inter);
