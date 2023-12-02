@@ -45,6 +45,7 @@ nav{
 
 .enlaceBarra{
     padding-top: 10px;
+    white-space: nowrap;
 }
 
 .enlaceBarra a{
@@ -274,10 +275,16 @@ nav{
     width: 100%;
     /*height: auto;*/
     height: 100%;
+   
     fill: var(--background-colors-primary-green-dark, #004C47);
     /*box-shadow: 0px 20px 35px 0px rgba(9, 202, 209, 0.65) inset;*/
     /*object-fit: cover;*/
    
+}
+#vectorpiepagina_movil {
+   
+    /* Otras propiedades aquí */
+    display: none; /* Inicialmente, oculta el vector para dispositivos móviles */
 }
 .footer_conteiner{
  /*display: flex;
@@ -495,14 +502,20 @@ nav{
 @media screen and (max-width:575px){
     #cabecera {
         height: 100%;
-       /* display: flex;
-        flex-direction: column;*/
-        gap:0,150%
+        display: flex;
+        flex-direction: column;
+        gap:0,150%;
+        
+        
+        
     }
     #logotipo {
         
-        width: 100px; 
+        width: 150px; 
+        
         padding-top: 8;
+        position: absolute;
+        right: 190px;
     }
     nav{
         /*grid-template-columns: repeat(1, 1fr);*/
@@ -514,6 +527,7 @@ nav{
         flex-direction: column;
         gap: 4px;
         width: 100%;
+        margin-top: 80px;
         
     }
     #miCuenta {
@@ -524,6 +538,7 @@ nav{
     .enlaceBarra a {
         font-size: 22px;
         padding-top: 5px;
+       
     }
     #enlaceLupa.enlaceBarra{
         width: 10%;
@@ -602,26 +617,37 @@ nav{
         height: 100%;*/
         
     }
-    #vectorpie_pagina {
-        width: 100%;
-        height: auto;
-        background-image: url("../vectores/Vector 3_movil.svg");
-       /* box-sizing: border-box;
-        display: flex;*/
-    }
-    #vectorpie_paginamovil{
-        width: 100%;
-    }
-    .footer_conteiner {
     
-        grid-template-columns:repeat( 2 ,1fr) ; /* 1 columna en dispositivos móviles */
-        gap: 2px; 
+    #vectorpiepagina_movil{
+        
+        /*background-image: url("../vectores/Vector 3_movil(3).svg") ;*/
+        display: flex; 
+        fill: var(--background-colors-primary-green-dark, #004C47);
+        width: 100%;
+        
+        /*background-image: url("../vectores/Vector 3_movil(3).svg");*/
+    
+        height: auto;
+   
+    }   
+    #vectorpie_pagina {
+        /* width: 100%;
+         height: auto;*/
+        /* background-image: none;*/
+         display: none; 
+        /* box-sizing: border-box;
+         display: flex;*/
+     }
+    .footer_conteiner {
+        display:flex;
+        flex-direction: column;
+        gap: 20px; 
         width: 100%;
      
         margin: 0;
         position: absolute;
-        left: 28px;
-        bottom: 2px;
+        left: 100px;
+        bottom: 400px;
         right: 70px;
         
     }
@@ -639,8 +665,8 @@ nav{
 
     /* Otros ajustes y estilos para tabletas */
     #imagredes{
-        width: 6px;
-        height: 6px;
+        width: 35px;
+        height: 35px;
 
     }
     .enlace{
@@ -659,16 +685,27 @@ nav{
     }
     .columna{
         margin-bottom: 5px;
-        font-size: 10px; 
+        font-size: 16px; 
 
     }
     .columnaiconos {
         margin-bottom: 5px;
         gap: 0px;
-        font-size: 10px; /* Ajusta el margen inferior entre las columnas */
+        font-size: 16px; /* Ajusta el margen inferior entre las columnas */
     }
+    .enlace{
+        font-size: 16px;
 
-    
+    }
+    #imagredes{
+        width: 30px;
+        height: 30px;
+
+    }
+    .columnaiconos img{
+        width: 24px;
+        height: 24px;
+    }
 
 
 }
