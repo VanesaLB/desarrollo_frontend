@@ -220,6 +220,8 @@ div.enlaceBarra{
     gap: 4%;
     justify-content: center;
     z-index: 3;
+    margin: auto;
+    width: 80%;
 }
 
 /*Hero*/
@@ -231,6 +233,8 @@ div.enlaceBarra{
     font-style: normal;
     font-weight: 700;
     line-height: 140%; /* 81.2px */
+    margin: auto;
+
 }
 
 .hero p{
@@ -283,6 +287,8 @@ div.enlaceBarra{
     flex-direction: row;
     justify-content: center;
     flex-direction: column;
+    margin: auto;
+
 }
 
 /*Profesionales a tu alcance*/
@@ -291,6 +297,8 @@ div.enlaceBarra{
     flex-direction: column;
     align-items: flex-end;
     gap: 60px;
+    margin: auto;
+
 }
 
 #secProfesionales h2{
@@ -303,6 +311,7 @@ div.enlaceBarra{
     font-weight: 700;
     line-height: 140%; /* 67.2px */
     text-align: right;
+
 }
 
 #profesionales{
@@ -684,6 +693,195 @@ div.enlaceBarra{
     z-index: 4;
 }
 
+/*TABLET*/
+@media screen and (max-width:992px){
+/*HEADER*/
+#cabecera{
+    width: 100%;
+    align-items: flex-center;
+    gap: 2rem;
+    justify-content: center;
+    /*text-align: center;*/
+    flex-shrink: 0;
+}
+
+#logotipo{
+    width: 10rem;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+nav{
+    display: flex;
+    padding: 4% 0px 0px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1%;
+    width: 90%;
+    /*height: 16px;*/
+}
+
+div.enlaceBarra{
+    padding-top: 12px;
+    height: 16px;
+}
+
+.enlaceBarra a{
+    text-decoration: none;
+    color: #004C47;
+    font-family: 'Inter', Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-right: 0.4em;
+    white-space: nowrap;
+}
+
+#btnPrimario{
+    display: flex;
+    border-radius: 32px;
+    height: 42px;
+    width: auto;
+    background: var(--contrast-orange-dark, #D25608);
+    box-shadow: 3px 3px 4px 0px rgba(93, 92, 92, 0.75);
+    padding: 0.3em 0.3em;
+    justify-content: center;
+    align-items: center;
+    color: var(--base-colors-white, #FFF);
+    text-align: center;
+    font-family: 'Inter', Helvetica, sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 28px */
+}
+
+#btnSecundario{
+    display: flex;
+    height: 42px;
+    width: auto;
+    white-space: nowrap;
+    border-radius: 32px;
+    border: 1px solid var(--contrast-orange-dark, #D25608);
+    background: var(--base-colors-white, #FFF);
+    box-shadow: 3px 3px 4px 0px rgba(93, 92, 92, 0.75);
+    padding: 0.3em 0.3em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--contrast-orange-dark, #D25608);
+    /* Textos/Texto descripción */
+    font-family: 'Inter', Helvetica, sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 28px */
+}
 
 
+/*LUPA*/
+#enlaceLupa.enlaceBarra{
+    width: 7%;
+}
+
+#inputBusqueda{
+    width: 28px;
+}
+
+#lupa{
+    width: 18px;
+}
+
+/*MAIN*/
+.secciones{
+    gap: 4%;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 80%;
+}
+
+/*Hero*/
+.hero h1{
+    width: 100%;
+}
+
+.hero p{
+    width: 100%;
+}
+
+.hero a{
+    font-size: 18px;
+}
+
+.hero img{
+    width: 100%;
+}
+
+/*Profesionales a tu alcance*/
+#secProfesionales{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2em;
+    margin: auto;
+    width: 100%;
+}
+
+#profesionales{
+    display: flex;
+    align-items: flex-start;
+    gap: 11%;
+    margin: auto;
+    width: 100%;
+}
+
+#vectorProfesionales{
+    top: 500px;
+}
+
+/*Consultas online*/
+#secConsultas {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    margin: auto;
+    width: 100%;
+}
+
+#consultas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+#consultas img{
+    width: 50%;
+}
+
+#barraSeparadora{
+    width: 4%;
+    height: 285px;
+}
+
+#parrafosConsulta p{
+    width: 100%;
+}
+
+#vectorConsulta{
+    top: 1100px;
+}
+
+
+
+}
+
+/*MOVIL*/
+@media screen and (max-width:575px){
+
+
+    
+}
 
