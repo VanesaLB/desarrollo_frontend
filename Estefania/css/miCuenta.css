@@ -11,8 +11,8 @@ body{
 
 
 
- /*HEADER*/
- #cabecera{
+/*HEADER*/
+#cabecera{
     width: 100%;
     border-bottom: 1px solid #000;
     box-shadow: 0px 2px 8px 3px rgba(0, 0, 0, 0.25);
@@ -25,7 +25,7 @@ body{
     justify-content: center;
     /*text-align: center;*/
     flex-shrink: 0;
-    
+
 }
 
 #logotipo{
@@ -58,7 +58,7 @@ nav{
     padding: 10px 14px;
     width: auto;
 }
- #miCuenta{
+#miCuenta{
     text-decoration: none;
     color: #009794;
     font-family: 'Inter', Helvetica, sans-serif;
@@ -115,11 +115,6 @@ nav{
     fill: #004C47;
     width: 20px;
     height: 19.999px;
-   /* padding-right: 0;*/
-    
-   /* border: 1px solid var(--background-colors-primary-green-dark, #004C47);
-    background: var(--base-colors-white, #FFF);*/
-    
 }
 
 #buscador{
@@ -149,19 +144,19 @@ nav{
 
 
 .main-section {
-      border-radius: 16px;
-      background: rgba(0, 76, 71, 0.10);
-      width: 1111px;
-      height: 580px;
-      margin: auto;
-      margin-top: 96px;
-      margin-bottom: 61px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 56px 111px;
-     
-    }
+    border-radius: 16px;
+    background: rgba(0, 76, 71, 0.10);
+    width: 1111px;
+    height: 580px;
+    margin: auto;
+    margin-top: 96px;
+    margin-bottom: 61px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px 111px;
+    
+}
 
     
 .textomiCuenta{
@@ -183,7 +178,7 @@ nav{
     grid-template-columns: repeat(3, 1fr);
     gap: 48px 128px;
     /*gap:4.32% 11.52%;*/
-   }
+}
 .card {
     /*display: inline-block;*/
     display: flex;
@@ -200,7 +195,7 @@ nav{
     align-items: center;
     gap: 6px;
     flex-shrink: 0;
-  }
+}
 #foto{
     width: 88px;
     /*flex: 1 0 0;*/
@@ -282,7 +277,7 @@ nav{
     /*box-shadow: 0px 20px 35px 0px rgba(9, 202, 209, 0.65) inset;*/
     /*object-fit: cover;*/
    
-}*
+}
 .footer_conteiner{
  /*display: flex;
  background-color: rgba(255, 255, 255, 0.8);
@@ -354,95 +349,143 @@ nav{
     text-decoration: none;
 
 }
+     /*-------------------------------------------------------TABLETA---------------------*/
 @media screen and (max-width:992px){
-#cabecera {
-    height: 80px; /* Ajusta la altura del encabezado para tabletas */
-}
+    #cabecera {
+        height: 80px;
+        gap:0,300%
+    }
+    #logotipo {
+        
+        width: 50px; 
+        padding-top: 5;
+    }
+    nav{
+        display: flex;
+        padding: 10px 0px 3px;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 6px;
+        width: 100%;
+        
+    }
+    #miCuenta {
+        font-size: 12px;
+        padding-top: 5px;
+    }
 
-#logotipo {
-    
-    width: 100px; 
-    padding-top: 5;/* Ajusta el tamaño del logotipo para tabletas */
-}
+    .enlaceBarra a {
+        font-size: 12px;
+        padding-top: 5px;
+    }
+    #enlaceLupa.enlaceBarra{
+        width: 20%;
+    }
+    #inputBusqueda{
+        
+        width: 120px;
+        padding: 6px 4px 6px 0px;
+      
+    }
+    #buscador{
+        display: flex;
+        align-items: center;
+        width: 120px;
+    }
+    #btnBusqueda{
+       /* border-radius: 0px 16px 16px 0px;
+        border: 1px solid var(--background-colors-primary-green-dark, #004C47);
+        border-left: 0px;
+        background: var(--base-colors-white, #FFF);*/
+        padding: 2px 4px;
+        height: 28.67;
+        
+        
+    }
+    #fotonavegacion {
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+        border-radius: 36px;
+        background:  lightgray 50% / cover no-repeat;
+        margin-left: 170px;
+        margin-right:  40px;
+        margin-bottom: 32px ;
+    }
+    #lupa{
+        fill: #004C47;
+        width: 20px;
+        height: 20px;
+    }
 
-.enlaceBarra a {
-    font-size: 16px; /* Ajusta el tamaño de fuente para tabletas */
-}
+    .main-section {
+        width: 90%; 
+        height: auto;
+        margin: 10px auto; 
+    }
 
-#fotonavegacion {
-    margin-left: 20px; /* Ajusta el margen izquierdo del icono de navegación para tabletas */
-    margin-right: 20px; /* Ajusta el margen derecho del icono de navegación para tabletas */
-    margin-bottom: 20px; /* Ajusta el margen inferior del icono de navegación para tabletas */
-}
+    .textomiCuenta {
+        font-size: 32px; /* Ajusta el tamaño de fuente del título para tabletas */
+        margin-bottom: 8px; /* Ajusta el margen inferior del título para tabletas */
+    }
 
-.main-section {
-    width: 90%; 
-    height: auto;/* Ajusta el ancho de la sección principal para tabletas */
-    margin: 10px auto; /* Ajusta los márgenes de la sección principal para tabletas */
-}
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr); /* Ajusta el diseño de las tarjetas para tabletas */
+        gap: 24px; /* Ajusta el espacio entre las tarjetas para tabletas */
+    }
 
-.textomiCuenta {
-    font-size: 32px; /* Ajusta el tamaño de fuente del título para tabletas */
-    margin-bottom: 8px; /* Ajusta el margen inferior del título para tabletas */
-}
+    .card {
+        width: 100%; /* Ajusta el ancho de las tarjetas para tabletas */
+    }
+    /* Dentro de tu media query para tabletas */
 
-.cards-container {
-    grid-template-columns: repeat(2, 1fr); /* Ajusta el diseño de las tarjetas para tabletas */
-    gap: 24px; /* Ajusta el espacio entre las tarjetas para tabletas */
-}
+    #pie_pagina {
+        flex-direction: column; /* Cambia la dirección de la fila a columna para tabletas */
+        align-items: center; /* Centra los elementos en el eje cruzado */
+    }
 
-.card {
-    width: 100%; /* Ajusta el ancho de las tarjetas para tabletas */
-}
-/* Dentro de tu media query para tabletas */
+    .footer_conteiner {
 
-#pie_pagina {
-    flex-direction: column; /* Cambia la dirección de la fila a columna para tabletas */
-    align-items: center; /* Centra los elementos en el eje cruzado */
-}
+        grid-template-columns: repeat(4, 1fr); /* Divide el footer en dos columnas para tabletas */
+        gap: 2px; /* Ajusta el espacio entre las columnas */
+        text-align: center; /* Centra el texto en tabletas */
+        margin: 5px 0; /* Ajusta el margen exterior del footer */
+        width: 100%;
+        position: absolute;
+        left: 28px;
+        bottom: 36.188px;
+        right: 70px;
+    }
 
-.footer_conteiner {
-   
-    grid-template-columns: repeat(4, 1fr); /* Divide el footer en dos columnas para tabletas */
-    gap: 2px; /* Ajusta el espacio entre las columnas */
-    text-align: center; /* Centra el texto en tabletas */
-    margin: 5px 0; /* Ajusta el margen exterior del footer */
-    width: 100%;
-    position: absolute;
-    left: 28px;
-    bottom: 36.188px;
-    right: 70px;
-}
+    .columna{
+        margin-bottom: 5px;
+        font-size: 12px; 
 
-.columna{
-    margin-bottom: 5px;
-    font-size: 12px; 
+    }
+    .columnaiconos {
+        margin-bottom: 5px;
+        gap: 0px;
+        font-size: 12px; /* Ajusta el margen inferior entre las columnas */
+    }
 
-}
-.columnaiconos {
-    margin-bottom: 5px;
-    gap: 0px;
-    font-size: 12px; /* Ajusta el margen inferior entre las columnas */
-}
+    /* Otros ajustes y estilos para tabletas */
+    #imagredes{
+        width: 6px;
+        height: 6px;
 
-/* Otros ajustes y estilos para tabletas */
-#imagredes{
-    width: 6px;
-    height: 6px;
+    }
+    .enlace{
+        margin-bottom: 5px;
+        font-size: 10px;
+        font-weight: 150%;
+        line-height: 70%;
 
-}
-.enlace{
-    margin-bottom: 5px;
-    font-size: 10px;
-    font-weight: 150%;
-    line-height: 70%;
-
-}
-#especial{
-    margin-bottom: 8px;
-}
-.columnaiconos img {
-    width: 10px; /* Ajusta el ancho de la imagen */
-    height: 10px; /* Ajusta la altura de la imagen */
-}
+    }
+    #especial{
+        margin-bottom: 8px;
+    }
+    .columnaiconos img {
+        width: 10px; /* Ajusta el ancho de la imagen */
+        height: 10px; /* Ajusta la altura de la imagen */
+    }
 }
