@@ -693,6 +693,10 @@ div.enlaceBarra{
     z-index: 4;
 }
 
+#vectorpiepagina_movil{
+    display: none;
+}
+
 /*TABLET*/
 @media screen and (max-width:992px){
     /*HEADER*/
@@ -1407,23 +1411,24 @@ div.enlaceBarra{
 
     /*FOOTER*/
     #pie_pagina{
-        background-color: #004C47;
         width: 100%;
         display: flex;
         align-items: center;
-        gap: 9%;
+        gap: 48px;
         position: relative;
         justify-content: center;
         /*left: 1%;*/
         bottom: auto;
         z-index: 5;
-        margin-top: 16%;
+        margin: auto;
         flex-direction: column;
+        top: 1000px;
     }
 
     .columna{
         display: flex;
-        flex-direction: column;
+        margin:auto;
+        /*flex-direction: column;*/
         align-items: flex-end;
         gap: 8px;
         width: auto;
@@ -1506,6 +1511,18 @@ div.enlaceBarra{
         /*bottom: auto;*/
         top: 4220px;
         z-index: 0;
+        display: none;
     }
+
+    #vectorpiepagina_movil {
+        width: 100%;
+        height: auto;
+        flex-shrink: 1;
+        display: flex;
+        z-index: 4;
+        position: relative;
+        /*position: absolute;
+        bottom: 4000;*/
+    } 
     
 }
