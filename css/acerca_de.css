@@ -1897,41 +1897,93 @@ gap: 4rem;
     /*------------------------------------------------FINAAAAAAAAAAAAL BLOQUE 5 MOOOOOOOOOVIIIIIIIIIIIILLLLLLLL--------------------------------------------*/
 
     /*FOOTER*/
-#pie_pagina{
-    width: 100%;
-    margin: auto;
-    gap: 5%;
-    margin-top: 16%;
-}
+    #pie_pagina{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        position: relative;
+        justify-content: center;
+        /*left: 1%;*/
+        bottom: auto;
+        z-index: 5;
+        margin: auto;
+        flex-direction: column;
+        top: 700px;
+    }
 
-.columna p{
-    font-size: 14px;
-}
+    .columna{
+        display: flex;
+        margin:auto;
+        align-items: flex-end;
+        gap: 8px;
+        width: auto;
+    }
 
-.columna p a{
-    font-size: 14px;
-}
+    .columna p{
+        color: var(--base-colors-white, #FFF);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 22.4px */
+        width: 12em;
+        margin: 0px;
+    }
 
-#emailYTelf {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-}
+    .columna p a{
+        text-decoration: none;
+        color: var(--base-colors-white, #FFF);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 22.4px */
+        /*width: 208px;
+        height: 17px;*/
+    }
 
-#emailYTelf p a img{
-    width: 22px;
-}
+    .columna#redes{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
 
-#emailYTelf p a{
-    font-size: 14px;
-}
+    #emailYTelf {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
 
-#imgredes a img{
-    width: 26px;
-    height: 26px;
-}
+    #emailYTelf p a img{
+        width: 24px;
+    }
 
+    #emailYTelf p a{
+        text-decoration: none;
+        color: var(--base-colors-white, #FFF);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 22.4px */
+        /*width: 208px;
+        height: 17px;*/
+        margin: 0px;
+    }
+
+    #imgredes a img{
+        width: 35.534px;
+        height: 35.534px;
+    }
+
+    .enlace{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
 
 
 
@@ -1988,7 +2040,7 @@ gap: 4rem;
         
         position: absolute;
         /*bottom: auto;*/
-        top: 328rem;
+        top: 380rem;
         z-index: 4;
     }
 
