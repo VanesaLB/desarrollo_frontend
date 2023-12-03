@@ -214,6 +214,16 @@ div.enlaceBarra{
 }
 
 /*MAIN*/
+#contenedor{
+    display: flex;
+    gap: 24px;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
 .secciones{
     display: flex;
     align-items: center;
@@ -278,17 +288,6 @@ div.enlaceBarra{
     width: 544px;
     height: auto;
     flex-shrink: 0;
-}
-
-#contenedor{
-    display: flex;
-    gap: 24px;
-    align-content: center;
-    flex-direction: row;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
-
 }
 
 /*Profesionales a tu alcance*/
@@ -357,8 +356,6 @@ div.enlaceBarra{
 }
 
 #vectorProfesionales{
-    /*width: 1441px;
-    height: 1546px;*/
     width: 100%;
     height: auto;
     flex-shrink: 0;
@@ -366,6 +363,10 @@ div.enlaceBarra{
     position: absolute;
     top: 650px;
     z-index: 0;
+}
+
+#vectorProfesionalesMovil{
+    display: none;
 }
 
 /*Consultas online*/
@@ -378,7 +379,6 @@ div.enlaceBarra{
 
 #secConsultas h2{
     width: 413px;
-    /*height: 67px;*/
     margin: 48px 0px 0px;
     color: #004C47;
     font-family: Inria Sans;
@@ -417,8 +417,6 @@ div.enlaceBarra{
 }
 
 #vectorConsulta{
-    /*width: 1444px;
-    height: 2308.811px;*/
     flex-shrink: 0;
     width: 100%;
     height: auto;
@@ -427,6 +425,10 @@ div.enlaceBarra{
     position: absolute;
     top: 1300px;
     z-index: 1;
+}
+
+#vectorConsultaMovil{
+    display: none;
 }
 
 /*Mejora día a día*/
@@ -459,7 +461,6 @@ div.enlaceBarra{
 
 .grupoVideo{
     width: 208px;
-    /*height: 280px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -491,8 +492,6 @@ div.enlaceBarra{
 }
 
 #vectorVideos{
-    /*width: 1444px;
-    height: 2308.811px;*/
     flex-shrink: 0;
     width: 100%;
     height: auto;
@@ -501,6 +500,10 @@ div.enlaceBarra{
     position: absolute;
     top: 1920px;
     z-index: 2;
+}
+
+#vectorVideosMovil{
+    display: none;
 }
 
 /*Datos y cifras*/
@@ -567,8 +570,6 @@ div.enlaceBarra{
 }
 
 #vectorDatos{
-    /*width: 1444px;
-    height: 2308.811px;*/
     flex-shrink: 0;
     width: 100%;
     height: auto;
@@ -579,6 +580,10 @@ div.enlaceBarra{
     z-index: 2;
 }
 
+#vectorDatosMovil{
+    display: none;
+}
+
 /*FOOTER*/
 #pie_pagina{
     width: 100%;
@@ -587,22 +592,9 @@ div.enlaceBarra{
     gap: 9%;
     position: relative;
     justify-content: center;
-    /*left: 1%;*/
     bottom: auto;
     z-index: 5;
     margin-top: 16%;
-    /*margin-left: 7%;
-    margin-right: 0px;*/
-    /*margin-top: 140px;*/
-    /*display: flex;
-    width: 100%;
-    grid-template-rows: auto 1fr;
-    position: relative;*/
-   /* flex-direction: column;*/
-   /* align-items: flex-start;*/
-    /*padding: 0;
-    align-items: center;
-    gap: 10px;*/
 }
 
 .columna{
@@ -621,7 +613,6 @@ div.enlaceBarra{
     font-weight: 500;
     line-height: 140%; /* 22.4px */
     width: 12em;
-    /*height: 17px;*/
     margin: 0px;
 }
 
@@ -633,8 +624,6 @@ div.enlaceBarra{
     font-style: normal;
     font-weight: 500;
     line-height: 140%; /* 22.4px */
-    /*width: 208px;
-    height: 17px;*/
 }
 
 .columna#redes{
@@ -663,8 +652,6 @@ div.enlaceBarra{
     font-style: normal;
     font-weight: 500;
     line-height: 140%; /* 22.4px */
-    /*width: 208px;
-    height: 17px;*/
     margin: 0px;
 }
 
@@ -680,15 +667,12 @@ div.enlaceBarra{
 }
 
 #vectorpie_pagina{
-    /*width: 1444px;
-    height: 2308.811px;*/
     flex-shrink: 0;
     width: 100%;
     height: auto;
     flex-shrink: 0;
     fill: var(--base-colors-white, #FFF);
     position: absolute;
-    /*bottom: auto;*/
     top: 3220px;
     z-index: 4;
 }
@@ -697,33 +681,32 @@ div.enlaceBarra{
     display: none;
 }
 
-/*TABLET*/
+/*------------------------TABLET------------------------*/
 @media screen and (max-width:992px){
+
     /*HEADER*/
     #cabecera{
         width: 100%;
-        align-items: flex-center;
+        margin: auto;
+        align-items: center;
         gap: 2rem;
-        justify-content: center;
-        /*text-align: center;*/
-        flex-shrink: 0;
         margin-bottom: 40px;
     }
 
     #logotipo{
         width: 10rem;
+        margin: 16px 0px 16px 16px;
         padding-top: 4%;
         padding-bottom: 2%;
     }
 
     nav{
         display: flex;
-        padding: 4% 0px 0px;
+        padding: 3% 0px 0px;
         align-items: flex-start;
         justify-content: center;
         gap: 1%;
-        width: 90%;
-        /*height: 16px;*/
+        margin: auto;
     }
 
     div.enlaceBarra{
@@ -732,56 +715,20 @@ div.enlaceBarra{
     }
 
     .enlaceBarra a{
-        text-decoration: none;
-        color: #004C47;
-        font-family: 'Inter', Helvetica, sans-serif;
         font-size: 1.2rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
         padding-right: 0.4em;
-        white-space: nowrap;
     }
 
     #btnPrimario{
-        display: flex;
-        border-radius: 32px;
-        height: 42px;
-        width: auto;
-        background: var(--contrast-orange-dark, #D25608);
-        box-shadow: 3px 3px 4px 0px rgba(93, 92, 92, 0.75);
         padding: 0.3em 0.3em;
-        justify-content: center;
-        align-items: center;
-        color: var(--base-colors-white, #FFF);
-        text-align: center;
-        font-family: 'Inter', Helvetica, sans-serif;
         font-size: 1em;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%; /* 28px */
     }
 
     #btnSecundario{
-        display: flex;
         height: 42px;
         width: auto;
-        white-space: nowrap;
-        border-radius: 32px;
-        border: 1px solid var(--contrast-orange-dark, #D25608);
-        background: var(--base-colors-white, #FFF);
-        box-shadow: 3px 3px 4px 0px rgba(93, 92, 92, 0.75);
         padding: 0.3em 0.3em;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: var(--contrast-orange-dark, #D25608);
-        /* Textos/Texto descripción */
-        font-family: 'Inter', Helvetica, sans-serif;
         font-size: 1em;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%; /* 28px */
     }
 
 
@@ -799,11 +746,16 @@ div.enlaceBarra{
     }
 
     /*MAIN*/
+    #contenedor{
+        margin: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+    
     .secciones{
         gap: 4%;
-        justify-content: space-evenly;
+        justify-content: center;
         margin: auto;
-        width: 80%;
     }
 
     /*Hero*/
@@ -834,31 +786,22 @@ div.enlaceBarra{
     }
 
     #profesionales{
-        display: flex;
-        align-items: flex-start;
         gap: 11%;
-        margin: auto;
         width: 100%;
     }
 
     #vectorProfesionales{
-        top: 530px;
+        top: 550px;
     }
 
     /*Consultas online*/
     #secConsultas {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 32px;
-        margin: auto;
-        width: 100%;
+        display: flex;
+
     }
 
     #consultas{
         display: flex;
-        justify-content: center;
-        align-items: center;
         gap: 2em;
     }
 
@@ -876,7 +819,8 @@ div.enlaceBarra{
     }
 
     #vectorConsulta{
-        top: 1150px;
+        top: 1180px;
+
     }
 
     /*Mejora día a día*/
@@ -891,7 +835,6 @@ div.enlaceBarra{
 
     .grupoVideo{
         width: 208px;
-        /*height: 280px;*/
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -899,7 +842,7 @@ div.enlaceBarra{
     }
 
     #vectorVideos{
-        top: 1670px;
+        top: 1700px;
     }
 
     /*Datos y cifras*/
@@ -936,7 +879,7 @@ div.enlaceBarra{
     }
 
     #vectorDatos{
-        top: 2250px;
+        top: 2290px;
     }
 
     /*FOOTER*/
@@ -944,7 +887,7 @@ div.enlaceBarra{
         width: 100%;
         margin: auto;
         gap: 5%;
-        margin-top: 16%;
+        margin-top: 18%;
     }
 
     .columna p{
@@ -958,7 +901,6 @@ div.enlaceBarra{
     #emailYTelf {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         gap: 8px;
     }
 
@@ -976,12 +918,12 @@ div.enlaceBarra{
     }
 
     #vectorpie_pagina{
-        top: 2860px;
+        top: 2900px;
     }
 
 }
 
-/*MOVIL*/
+/*--------------------------MOVIL--------------------------*/
 @media screen and (max-width:575px){
 
     #cabecera{
@@ -1008,7 +950,7 @@ div.enlaceBarra{
         padding: 0px 0px 0px;
         align-items: center;
         justify-content: center;
-        gap: 1.5%;
+        gap: 2%;
         width: 100%;
         flex-direction: column;
         margin: auto;
@@ -1016,50 +958,22 @@ div.enlaceBarra{
     }
     
     div.enlaceBarra{
-        padding-top: 10px;
+        padding-top: 20px;
         height: auto;
     }
     
     #btnPrimario{
-        margin-bottom: 16px;
-        display: flex;
-        border-radius: 32px;
+        margin-bottom: 32px;
         height: 44px;
-        width: auto;
-        background: var(--contrast-orange-dark, #D25608);
-        box-shadow: 3px 3px 4px 0px rgba(93, 92, 92, 0.75);
         padding: 8px 16px;
-        justify-content: center;
-        align-items: center;
-        color: var(--base-colors-white, #FFF);
-        text-align: center;
-        font-family: 'Inter', Helvetica, sans-serif;
         font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%; /* 28px */
     }
     
     #btnSecundario{
         margin: 16px 0px;
-        display: flex;
         height: 44px;
-        width: 150px;
-        border-radius: 32px;
-        border: 1px solid var(--contrast-orange-dark, #D25608);
-        background: var(--base-colors-white, #FFF);
-        box-shadow: 3px 3px 4px 0px rgba(93, 92, 92, 0.75);
         padding: 8px 16px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: var(--contrast-orange-dark, #D25608);
-        /* Textos/Texto descripción */
-        font-family: 'Inter', Helvetica, sans-serif;
         font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%; /* 28px */
     }
     
     /*LUPA*/
@@ -1069,27 +983,10 @@ div.enlaceBarra{
     
     #inputBusqueda{
         border-radius: 16px 0px 0px 16px;
-        border: 1px solid var(--background-colors-primary-green-dark, #004C47);
-        border-right: 0px;
-        background: var(--base-colors-white, #FFF);
-        display: flex;
-        padding: 6px 0px 6px 0px;
-        justify-content: flex-start;
-        align-items: flex-end;
         width: 48px;
     }
     
-    #btnBusqueda{
-        border-radius: 0px 16px 16px 0px;
-        border: 1px solid var(--background-colors-primary-green-dark, #004C47);
-        border-left: 0px;
-        background: var(--base-colors-white, #FFF);
-        padding: 2px 4px;
-    }
-    
     #buscador{
-        display: flex;
-        align-items: center;
         justify-content: center;
     }
     
@@ -1098,8 +995,6 @@ div.enlaceBarra{
         display: flex;
         gap: 24px;
         align-content: center;
-        flex-direction: column;
-        justify-content: center;
         flex-direction: column;
         margin: auto;
         width: 100%;
@@ -1138,6 +1033,7 @@ div.enlaceBarra{
         gap: 32px;
         margin: auto;
         justify-content: center;
+        padding-top: 130px;
     }
 
     #secProfesionales h2{
@@ -1190,15 +1086,17 @@ div.enlaceBarra{
     }
 
     #vectorProfesionales{
-        /*width: 1441px;
-        height: 1546px;*/
+        display: none;
+    }
+
+    #vectorProfesionalesMovil{
+        display: flex;
         width: 100%;
-        height: auto;
         flex-shrink: 0;
         fill: rgba(0, 151, 148, 0.15);
         position: absolute;
-        top: 650px;
-        z-index: 0;
+        top: 1320px;
+        z-index: 1;
     }
 
     /*Consultas online*/
@@ -1207,18 +1105,13 @@ div.enlaceBarra{
         flex-direction: column;
         align-items: flex-start;
         gap: 32px;
+        padding-top: 60px;
     }
 
     #secConsultas h2{
         width: 100%;
-        /*height: 67px;*/
         margin: 48px 0px 0px;
-        color: #004C47;
-        font-family: Inria Sans;
         font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 140%; /* 67.2px */
         text-align: center;
     }
 
@@ -1247,15 +1140,18 @@ div.enlaceBarra{
     }
 
     #vectorConsulta{
-        /*width: 1444px;
-        height: 2308.811px;*/
+        display: none;
+    }
+
+    #vectorConsultaMovil{
+        display: flex;
         flex-shrink: 0;
         width: 100%;
         height: auto;
         flex-shrink: 0;
         fill: var(--base-colors-white, #FFF);
         position: absolute;
-        top: 1300px;
+        top: 3000px;
         z-index: 1;
     }
 
@@ -1264,8 +1160,9 @@ div.enlaceBarra{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 32px;
+        gap: 48px;
         width: 100%;
+        margin: 140px;
     }
 
     #secVideos h2{
@@ -1282,10 +1179,9 @@ div.enlaceBarra{
     #videos{
         display: flex;
         align-items: center;
-        gap: 24%;
+        gap: 36%;
         justify-content: center;
         flex-direction: column;
-
     }
 
     .grupoVideo{
@@ -1324,15 +1220,18 @@ div.enlaceBarra{
     }
 
     #vectorVideos{
-        /*width: 1444px;
-        height: 2308.811px;*/
+        display: none;
+    }
+
+    #vectorVideosMovil{
+        display: flex;
         flex-shrink: 0;
         width: 100%;
         height: auto;
         flex-shrink: 0;
         fill: rgba(0, 76, 71, 0.15);
         position: absolute;
-        top: 1920px;
+        top: 3980px;
         z-index: 2;
     }
 
@@ -1380,6 +1279,7 @@ div.enlaceBarra{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 20px;
     }
 
     #secDatos h2{
@@ -1394,18 +1294,23 @@ div.enlaceBarra{
         width: 100%;
         align-items: center;
         flex-direction: column;
+        gap: 48px;
+        margin-bottom: 0px;
     }
 
     #vectorDatos{
-        /*width: 1444px;
-        height: 2308.811px;*/
+        display: none;
+    }
+
+    #vectorDatosMovil{
+        display: flex;
         flex-shrink: 0;
         width: 100%;
         height: auto;
         flex-shrink: 0;
         fill: var(--base-colors-white, #FFF);
         position: absolute;
-        top: 2550px;
+        top: 5240px;
         z-index: 2;
     }
 
@@ -1422,13 +1327,12 @@ div.enlaceBarra{
         z-index: 5;
         margin: auto;
         flex-direction: column;
-        top: 1000px;
+        top: 700px;
     }
 
     .columna{
         display: flex;
         margin:auto;
-        /*flex-direction: column;*/
         align-items: flex-end;
         gap: 8px;
         width: auto;
@@ -1442,7 +1346,6 @@ div.enlaceBarra{
         font-weight: 500;
         line-height: 140%; /* 22.4px */
         width: 12em;
-        /*height: 17px;*/
         margin: 0px;
     }
 
@@ -1501,28 +1404,19 @@ div.enlaceBarra{
     }
 
     #vectorpie_pagina{
-        /*width: 1444px;
-        height: 2308.811px;*/
-        flex-shrink: 1;
-        width: 100px;
-        height: 100px;
-        fill: var(--base-colors-white, #FFF);
-        position: absolute;
-        /*bottom: auto;*/
-        top: 4220px;
-        z-index: 0;
         display: none;
     }
 
     #vectorpiepagina_movil {
         width: 100%;
-        height: auto;
-        flex-shrink: 1;
+        flex-shrink: 0;
         display: flex;
         z-index: 4;
-        position: relative;
-        /*position: absolute;
-        bottom: 4000;*/
-    } 
+        height: auto;
+        fill: var(--base-colors-white, #FFF);
+        position: absolute;
+        top: 6520px;
+        z-index: 4;
+    }
     
 }
