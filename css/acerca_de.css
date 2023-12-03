@@ -1086,31 +1086,29 @@ gap: 8px;
     }
 
 
-/*HEADER*/
-#cabecera{
+ /*HEADER*/
+ #cabecera{
     width: 100%;
-    align-items: flex-center;
+    margin: auto;
+    align-items: center;
     gap: 2rem;
-    justify-content: center;
-    /*text-align: center;*/
-    flex-shrink: 0;
     margin-bottom: 40px;
 }
 
 #logotipo{
     width: 10rem;
+    margin: 16px 0px 16px 16px;
     padding-top: 4%;
     padding-bottom: 2%;
 }
 
 nav{
     display: flex;
-    padding: 4% 0px 0px;
+    padding: 3% 0px 0px;
     align-items: flex-start;
     justify-content: center;
     gap: 1%;
-    width: 90%;
-    /*height: 16px;*/
+    margin: auto;
 }
 
 div.enlaceBarra{
@@ -1119,56 +1117,20 @@ div.enlaceBarra{
 }
 
 .enlaceBarra a{
-    text-decoration: none;
-    color: #004C47;
-    font-family: 'Inter', Helvetica, sans-serif;
     font-size: 1.2rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
     padding-right: 0.4em;
-    white-space: nowrap;
 }
 
 #btnPrimario{
-    display: flex;
-    border-radius: 32px;
-    height: 42px;
-    width: auto;
-    background: var(--contrast-orange-dark, #D25608);
-    box-shadow: 3px 3px 4px 0px rgba(93, 92, 92, 0.75);
     padding: 0.3em 0.3em;
-    justify-content: center;
-    align-items: center;
-    color: var(--base-colors-white, #FFF);
-    text-align: center;
-    font-family: 'Inter', Helvetica, sans-serif;
     font-size: 1em;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140%; /* 28px */
 }
 
 #btnSecundario{
-    display: flex;
     height: 42px;
     width: auto;
-    white-space: nowrap;
-    border-radius: 32px;
-    border: 1px solid var(--contrast-orange-dark, #D25608);
-    background: var(--base-colors-white, #FFF);
-    box-shadow: 3px 3px 4px 0px rgba(93, 92, 92, 0.75);
     padding: 0.3em 0.3em;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--contrast-orange-dark, #D25608);
-    /* Textos/Texto descripción */
-    font-family: 'Inter', Helvetica, sans-serif;
     font-size: 1em;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140%; /* 28px */
 }
 
 
@@ -1184,6 +1146,7 @@ div.enlaceBarra{
 #lupa{
     width: 18px;
 }
+
 
 /*-----------------------------------------------BLOQUE 1 MEDIAAAAA TABLET-------------------------------------------------- */
 #bloqueSobreNosotros{
