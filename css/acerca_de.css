@@ -1192,7 +1192,7 @@ div.enlaceBarra{
     margin-top: 6rem;
     margin-left: 6rem;
     margin-right: 12rem;
-    
+    align-content: center; 
     flex-direction: column;
 gap: 6 rem;
 
@@ -1281,6 +1281,47 @@ gap: 2rem;
 }
 
 /*BLOQUE 4 Y BLOQUE 5 EN TABLET SE VEN BIEN */
+
+
+/*FOOTER*/
+#pie_pagina{
+    width: 100%;
+    margin: auto;
+    gap: 5%;
+    margin-top: 16%;
+}
+
+.columna p{
+    font-size: 14px;
+}
+
+.columna p a{
+    font-size: 14px;
+}
+
+#emailYTelf {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+#emailYTelf p a img{
+    width: 22px;
+}
+
+#emailYTelf p a{
+    font-size: 14px;
+}
+
+#imgredes a img{
+    width: 26px;
+    height: 26px;
+}
+
+#vectorpie_pagina{
+    top: 2860px;
+}
 
 /*VECTOREESSSSSS DE FODNOOOOOOOOOO TABLEEEEETTTTTTTTTTT-----------------------*/
 
