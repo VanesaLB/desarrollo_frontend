@@ -243,16 +243,8 @@ font-weight: 500;
 line-height: 140%; /* 28px */
 }
 
-#botonConsulta{
-    display: flex;
-padding: 1rem 2rem;
-justify-content: center;
-align-items: center;
-
-border-radius: 32px;
-background: var(--contrast-orange-dark, #D25608);
-/* Sombras botones */
-box-shadow: 3px 3px 4px 0px rgba(93, 92, 92, 0.75);
+a#btnPrimario{
+    text-decoration: none;
 }
 
 /*-------------------------------------------------------------BLOQUE 2------------------------------------------------------- */
@@ -403,9 +395,6 @@ gap: 13.5rem;
     gap: 1rem;
 }
 
-#contenedorImagenTestimonio1{
-   
-}
 #imagenTestimonio1{
     width: 208px;
     height: 208px;
@@ -458,9 +447,6 @@ align-items: center;
 gap: 1rem;
 }
 
-#contenedorImagenTestimonio2{
-  
-}
 #imagenTestimonio2{
 width: 208px;
 height: 208px;
@@ -513,10 +499,6 @@ align-items: center;
 gap: 16px;
 }
 
-#contenedorImagenTestimonio3{
-
-
-}
 #imagenTestimonio3{
     width: 208px;
     height: 208px;
@@ -594,9 +576,7 @@ line-height: 140%; /* 22.4px */
     align-items: center;
     gap: 3rem;
 }
-#bloqueIconoTelefono{
 
-}
 #iconoTelefono{
     width: 88px;
     height: 88.054px;
@@ -628,9 +608,7 @@ line-height: 140%; /* 22.4px */
     align-items: center;
     gap: 3rem;
 }
-#bloqueIconoEmail{
 
-}
 #iconoEmail{
     width: 88px;
 height: 66.113px;
@@ -843,9 +821,6 @@ line-height: 140%; /* 22.4px */
 border: 1px solid  #004C47;
 background: var(--base-colors-white, #FFF);
 }
-#bloqueEnviar {
-   
-}
 
 #botonEnviarFormulario{  
     display: flex;
@@ -939,30 +914,7 @@ z-index: 3;
     bottom: auto;
     z-index: 5;
     margin-top: 240px;
-    /*margin-left: 7%;
-    margin-right: 0px;*/
-    /*margin-top: 140px;*/
-    /*display: flex;
-    width: 100%;
-    grid-template-rows: auto 1fr;
-    position: relative;*/
-   /* flex-direction: column;*/
-   /* align-items: flex-start;*/
-    /*padding: 0;
-    align-items: center;
-    gap: 10px;*/
 }
-/*
-#footer_conteiner{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    gap: 128px;
-    z-index: 5;
-    margin-top: 200px;
-    flex-direction: row;
-    /*left: 56px;
-*/
 
 .columna{
     display: flex;
