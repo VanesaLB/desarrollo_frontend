@@ -2027,22 +2027,20 @@ gap: 4rem;
     z-index: 3;
     }
     
+   
+
     #vectorpie_pagina{
-        /*width: 1444px;
-        height: 2308.811px;*/
-        width: 100%;
-        
-        flex-shrink: 0;
-        width: 100%;
-        height: auto;
-        flex-shrink: 0;
-        fill: #004C47;
-        
-        position: absolute;
-        /*bottom: auto;*/
-        top: 380rem;
-        z-index: 4;
+        display: none;
     }
 
-
+    #vectorpiepagina_movil {
+        width: 100%;
+        flex-shrink: 0;
+        display: flex;
+        z-index: 4;
+        fill: var(--base-colors-white, #FFF);
+        position: absolute;
+        top: 353rem;
+        z-index: 4;
+    }
 }
