@@ -934,7 +934,6 @@ div.enlaceBarra{
         align-items: center;
         gap: 10px;
         justify-content: center;
-        /*text-align: center;*/
         flex-shrink: 0;
         flex-direction: column;
     }
@@ -954,7 +953,6 @@ div.enlaceBarra{
         width: 100%;
         flex-direction: column;
         margin: auto;
-        /*height: 16px;*/
     }
     
     div.enlaceBarra{
@@ -1023,13 +1021,13 @@ div.enlaceBarra{
     .hero img{
         width: 100%;
         flex-shrink: 0;
+        margin-top: 30px;
     }
 
     /*Profesionales a tu alcance*/
     #secProfesionales{
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
         gap: 32px;
         margin: auto;
         justify-content: center;
@@ -1042,47 +1040,28 @@ div.enlaceBarra{
     }
 
     #profesionales{
-        display: flex;
-        align-items: flex-start;
         justify-content: center;
         gap: 80px;
         flex-wrap: wrap;
     }
 
     .profesional{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         gap: 8px;
     }
 
     .textoProfesional{
-        display: flex;
-        width: 208px;
-        flex-direction: column;
         align-items: center;
         gap: 8px;
     }
 
     .textoProfesional h3{
-        color: var(--background-colors-primary-green-dark, #004C47);
         text-align: center;
-        font-family: Inria Sans;
         font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 140%; /* 33.6px */
         margin: auto;
     }
 
     .textoProfesional p{
-        color: var(--background-colors-primary-green-dark, #004C47);
         text-align: center;
-        font-family: Inter;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%; /* 22.4px */
     }
 
     #vectorProfesionales{
@@ -1095,7 +1074,7 @@ div.enlaceBarra{
         flex-shrink: 0;
         fill: rgba(0, 151, 148, 0.15);
         position: absolute;
-        top: 1320px;
+        top: 1460px;
         z-index: 1;
     }
 
@@ -1103,7 +1082,6 @@ div.enlaceBarra{
     #secConsultas {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         gap: 32px;
         padding-top: 60px;
     }
@@ -1111,7 +1089,6 @@ div.enlaceBarra{
     #secConsultas h2{
         width: 100%;
         margin: 48px 0px 0px;
-        font-size: 48px;
         text-align: center;
     }
 
@@ -1131,7 +1108,6 @@ div.enlaceBarra{
     #barraSeparadora{
         width: 80%;
         height: 8px;
-        background: var(--contrast-orange-medium, #E49A6B);
     }
 
     #parrafosConsulta p{
@@ -1151,7 +1127,7 @@ div.enlaceBarra{
         flex-shrink: 0;
         fill: var(--base-colors-white, #FFF);
         position: absolute;
-        top: 3000px;
+        top: 3020px;
         z-index: 1;
     }
 
@@ -1167,13 +1143,7 @@ div.enlaceBarra{
 
     #secVideos h2{
         width: 100%;
-        color: #004C47;
         text-align: center;
-        font-family: Inria Sans;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 140%; /* 67.2px */
     }
 
     #videos{
@@ -1187,7 +1157,6 @@ div.enlaceBarra{
     .grupoVideo{
         width: 100%;
         margin: auto;
-        /*height: 280px;*/
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1196,27 +1165,7 @@ div.enlaceBarra{
 
     .grupoVideo p{
         width: 200px;
-        color: var(--background-colors-primary-green-dark, #004C47);
         text-align: center;
-        font-family: Inter;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%; /* 22.4px */
-    }
-
-    /*TRANSICION*/
-    .grupoVideo video{
-        width: 208px;
-        height: 208px;
-        border: 4px solid var(--base-colors-white, #FFF);
-        background-color: #004C47;
-        transition: all 2s ease;
-    }
-
-    .grupoVideo video:hover{
-        height: 180px;
-        background-color: #FFF;
     }
 
     #vectorVideos{
@@ -1252,19 +1201,7 @@ div.enlaceBarra{
     .puntoParrafo p{
         width: 100%;
         flex-shrink: 0;
-        color: var(--background-colors-primary-green-dark, #004C47);
-        font-family: Inter;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%; /* 28px */
         margin: auto;
-    }
-
-    .puntoParrafo img{
-        width: 26px;
-        height: 20px;
-        flex-shrink: 0;
     }
 
     #puntosDatos{
@@ -1285,7 +1222,6 @@ div.enlaceBarra{
     #secDatos h2{
         text-align: center;
         width: 100%;
-        height: auto;
         margin: 0px;
     }
 
@@ -1310,7 +1246,7 @@ div.enlaceBarra{
         flex-shrink: 0;
         fill: var(--base-colors-white, #FFF);
         position: absolute;
-        top: 5240px;
+        top: 5230px;
         z-index: 2;
     }
 
@@ -1322,12 +1258,11 @@ div.enlaceBarra{
         gap: 48px;
         position: relative;
         justify-content: center;
-        /*left: 1%;*/
         bottom: auto;
         z-index: 5;
         margin: auto;
         flex-direction: column;
-        top: 700px;
+        top: 480px;
     }
 
     .columna{
@@ -1339,26 +1274,14 @@ div.enlaceBarra{
     }
 
     .columna p{
-        color: var(--base-colors-white, #FFF);
-        font-family: Inter;
         font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%; /* 22.4px */
         width: 12em;
         margin: 0px;
     }
 
     .columna p a{
         text-decoration: none;
-        color: var(--base-colors-white, #FFF);
-        font-family: Inter;
         font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%; /* 22.4px */
-        /*width: 208px;
-        height: 17px;*/
     }
 
     .columna#redes{
@@ -1381,14 +1304,7 @@ div.enlaceBarra{
 
     #emailYTelf p a{
         text-decoration: none;
-        color: var(--base-colors-white, #FFF);
-        font-family: Inter;
         font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%; /* 22.4px */
-        /*width: 208px;
-        height: 17px;*/
         margin: 0px;
     }
 
@@ -1414,8 +1330,7 @@ div.enlaceBarra{
         z-index: 4;
         fill: var(--base-colors-white, #FFF);
         position: absolute;
-        top: 6520px;
-        z-index: 4;
+        top: 6480px;
     }
 
 }
